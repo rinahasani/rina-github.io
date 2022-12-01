@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: palevioletred;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke ;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#about{
+    padding: 80px 0;
+    margin: 60px;
+    color: ghostwhite;
+    position: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col2{
+    flex-basis: 60%;
+    position: center;
+}
+.sub-title{
+    padding: 80px;
+    font-size: 50px;
+    font-weight: 600;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+#skill {
+    padding: 60px;
+    color: whitesmoke;
+    background-color: black;
+    align-items: left;
+  }
+
+.skills{
+font-size: 50px;
+font-weight: 700;
+color: whitesmoke;
+  }
+  
+
+ .skill--content {
+    display: block;
+  }
+  
+  
+.skill--content .left {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  
+.skill--content .left h2 {
+    font-size: 50px;
+    color:whitesmoke;
+  }
+  
+.skill--content .right {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    display: block;
+  }
+  
+  
+.skill--content .right .item {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 30px 15px;
+    border-width: 5px 5px 5px 5px;
+    border-image-slice: 9;
+    border-style: solid;
+  }
+  
+.skill--content .right .item img {
+    max-width: 100px;
+    height: auto;
+}
+
+#education{
+    padding: 20px;
+  }
+
+
+.education-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+}
+.education-list div{
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+}
+
+.education1 {
+    background-image: url(images/elementaryschool.webp);
+}
+.education2 {
+    background-image: url(images/highschool.webp);
+}
+.education3{
+    background-image: url(images/university.jpg);
+}
+.education4{
+    background-image: url(images/cydeo.jpg);
+}
+
+.education-list div h2{
+     font-size: 30px;
+     font-weight: 500;
+     margin-bottom: 15px;
+}
+
+
+ 
+#contact {
+    width: 500px;
+    margin:2em auto;
+    padding: 60px;
+    background:black;
+    position: relative;
+    text-align: center;
+    }
+#contact::after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 90%;
+    left: 5%;
+    bottom: 0;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    }
+    #contact h1 {
+    background: black;
+    padding: 60px;
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    }
+    .contactbutton {
+    background: black;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    }
+    .contactbutton:hover {
+    margin-top: 22px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    }
+    .mail {
+    margin-top: 11px;
+    font-size: 15px;
+    display: inline-block;
+    border-top: 2em solid transparent;
+    border-left: 2.6em solid white;
+    height: 0;
+    width: 0;
+    position: relative;
+    }
+    .mail:before {
+    content: '';
+    top: -2.5em;
+    left: -2.95em;
+    display: block;
+    position: absolute;
+    border-top: 1.2em solid white;
+    border-left: 1.6em solid transparent;
+    border-right: 1.6em solid transparent;
+    border-bottom: 1em solid transparent;
+    font-size: 0.8em;
+    }
+    .mail::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-top: 2em solid transparent;
+    border-right: 2.6em solid white;
+    height: 0;
+    width: 0;
+    left: -2.18em;
+    bottom: 0;
+    }
+    #checkcontact{
+    position: absolute;
+    left: -9999px;
+    }
+    .contactform {
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    -ms-transition: all linear 1s;
+    transition: all linear 1s;
+    }
+    #checkcontact:checked + .contactform {
+    max-height: 1000px;
+    }
+    .input_wrapper {
+    position: relative;
+    }
+    .textarea_wrapper textarea {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 0 0 1px 0 white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    color: white;
+    }
+    .input_wrapper input[type="text"] {
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+    background: white;
+    border: 1px solid black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    color: white;
+    text-indent: 15%;
+    }
+    .input_wrapper input[type="text"]:focus {
+    background: black;
+    box-shadow: inset 2px 2px 5px 0 white;
+    outline: none;
+    text-indent: 0;
+    }
+    .input_wrapper label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    width: 15%;
+    text-align: center;
+    line-height: 2.8em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    }
+    .input_wrapper input[type="text"]:focus + label {
+    left: 85%;
+    }
+    .textarea_wrapper textarea {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+      min-height:150px;
+    background: black;
+    border: 1px solid white;
+    box-shadow: 0 0 1px 0 white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    color: #5E5E5E;
+    }
+    .textarea_wrapper textarea:focus {
+    background: black;
+    box-shadow: inset 2px 2px 5px 0 white;
+    outline: none;
+    }
+    .submit_wrapper {
+    text-align: center;
+    }
+    .submit_wrapper input {
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    margin-top: 1em;
+    margin-bottom: 6px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 1em;
+    border: none;
+    -webkit-box-shadow: 1px 1px 0 0 white,2px 2px 0 0 white,3px 3px 0 0 white;
+    box-shadow: 1px 1px 0 0 white,2px 2px 0 0 white,3px 3px 0 0 white;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    }
+    .submit_wrapper input:hover {
+    margin-top: 22px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+    }
+    
+    @media (max-width: 500px){
+    #contact {
+    width: 100%;
+    }
+      .input_wrapper label {
+    line-height: 3.5em;
+    font-size: 0.8em;
+    }
+}
+
+#socialmedia{
+    padding: 30px;
+    text-align: center;
+}
+.socialmedia .h1{
+    font-size: 50px;
+}
